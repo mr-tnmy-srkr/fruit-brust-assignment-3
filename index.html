@@ -25,7 +25,7 @@
                     colors: {
                         clifford: '#da373d',
                         'nav-primary': '#F85559',
-                        // 'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+                        'footer-bg': '#121212',
                     },
                     backgroundImage: {
                         // 'banner-bg': "url('./images/banner.png')",
@@ -40,12 +40,14 @@
             font-family: 'Lato', sans-serif;
         }
     </style>
+    <style>
+    </style>
 </head>
 
 <body class="font-lato">
     <header class=" ">
         <!-- navbar -->
-        <nav class="hidden">
+        <nav class="container mx-auto bg-nav-primary rounded-[600px] hidden">
             <div class="navbar pl-0 ">
                 <div class="navbar-center hidden lg:flex ">
                     <ul class="menu menu-horizontal px-1 text-2xl text-black">
@@ -59,12 +61,14 @@
                 <div class=" m-auto">
 
                     <div class="flex ">
-                        <!-- <a class="btn btn-ghost justify-start pl-0 shrink"> -->
-                        <a class="" href="#"><img class="w-3/5 md:w-2/5 lg:w-3/5" src="./images/logo.png" alt=""></a>
-                        <!-- </a> -->
-                        <a href="#">
-                            <h2 class="text-4xl font-bold text-white">Fruit Brush</h2>
+                        <a class="btn btn-ghost justify-start pl-0 shrink">
+                            <div class="flex ">
+                                <img class="w-[50px] h-[50px]" src="./images/logo.png" alt="">
+                                <span class="text-4xl font-bold text-white">Fruit Brush</span>
+                            </div>
                         </a>
+
+
                     </div>
 
                     <div class="dropdown">
@@ -100,7 +104,7 @@
         </nav>
 
         <!-- navbar -->
-        <nav class="bg-black mx-auto">
+        <nav class="bg-black mx-auto hidden">
             <div class="container mx-auto bg-nav-primary rounded-[600px] my-5">
                 <div class="navbar p-0 ">
 
@@ -114,9 +118,9 @@
                     </div>
                     <!-- w-full lg:w-1/2 -->
                     <div class="navbar-end justify-between lg:justify-center flex-row-reverse lg:flex-row ">
-                        <div class="dropdown">
+                        <div class="dropdown ">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M4 6h16M4 12h8m-8 6h16" />
@@ -147,8 +151,34 @@
         <div class="">
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+
+
+    </main>
+    <footer class="footer footer-center p-10 bg-footer-bg text-white rounded">
+        <div class="flex">
+            <img class="h-[55px] w-[55px]" src="./images/logo.png" alt="">
+            <span class="text-4xl font-bold">Fruit Burst</span>
+        </div>
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-4 text-lg font-medium">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">Account</a>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a class="link link-hover"><i class="fa-brands fa-twitter fa-2xl"></i></i></a>
+                <a class="link link-hover"><i class="fa-brands fa-facebook fa-2xl"></i></i></a>
+                <a class="link link-hover"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                <a class="link link-hover"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+                <a class="link link-hover"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a class="link link-hover"><i class="fa-brands fa-apple fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
