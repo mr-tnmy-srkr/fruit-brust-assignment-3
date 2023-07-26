@@ -50,108 +50,53 @@
 <body class="font-lato">
     <header class=" ">
         <!-- navbar -->
-        <nav class="container mx-auto bg-nav-primary rounded-[600px] hidden">
-            <div class="navbar pl-0 ">
-                <div class="navbar-center hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1 text-2xl text-black">
+        <nav class="container mx-auto lg:bg-nav-primary py-4 my-2 rounded-[600px]">
+            <div class=" flex justify-between items-center pl-3 lg:px-6">
+                <!-- Desktop menu -->
+                <div class="hidden lg:flex space-x-4 text-xl font-medium">
+                    <a href="#" class="text-white text-xl">Home</a>
+                    <a href="#" class="text-white text-xl">About Us</a>
+                    <a href="#" class="text-white text-xl">Shop</a>
+                    <a href="#" class="text-white text-xl">All Fruits</a>
+                </div>
+                <!-- Logo -->
+                <a href="#" class="flex items-center justify-center gap-1 lg:gap-2 lg:pl-16">
+                    <img class="w-12 h-12 mr-2" src="./images/logo.png" alt="Logo">
+                    <span class="text-[#121212] lg:text-white text-3xl md:text-4xl font-bold">Fruit Brush</span>
+                </a>
+
+                <!-- Hamburger menu (for smaller screens) -->
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden ">
+                        <i class="fa-solid fa-bars fa-2xl" style="color: #121212;"></i>                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-blue-950"
+                        style="position: absolute; right: 0">
+
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
                     </ul>
                 </div>
-
-                <div class=" m-auto">
-
-                    <div class="flex ">
-                        <a class="btn btn-ghost justify-start pl-0 shrink">
-                            <div class="flex ">
-                                <img class="w-[50px] h-[50px]" src="./images/logo.png" alt="">
-                                <span class="text-4xl font-bold text-white">Fruit Brush</span>
-                            </div>
-                        </a>
-
-
-                    </div>
-
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white"
-                            style="position: absolute; right: 0">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                        </ul>
-                    </div>
+                <!-- Search bar (hidden for smaller screens) -->
+                <div class="hidden lg:block w-72">
+                    <input class="border-0 px-4 py-2 rounded-full w-full" type="text" placeholder="Search Here">
                 </div>
-                <div>
-                    <input class="navbar-center hidden lg:flex text-black" type="text" name="" id="">
-                </div>
-                <!-- <div class="navbar-center hidden lg:flex text-black">
-                <ul class="menu menu-horizontal px-1 text-2xl">
-                    <li><a>Home</a></li>
-                    <li><a>Products</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-            </div> -->
             </div>
-        </nav>
-
-        <!-- navbar -->
-        <nav class="bg-black mx-auto ">
-            <div class="container mx-auto bg-nav-primary rounded-[600px] my-5">
-                <div class="navbar p-0 ">
-
-                    <div class="navbar-start hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
-                            <li><a>Item 1s</a></li>
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                        </ul>
-                    </div>
-                    <!-- w-full lg:w-1/2 -->
-                    <div class="navbar-end justify-between lg:justify-center flex-row-reverse lg:flex-row ">
-                        <div class="dropdown ">
-                            <label tabindex="0" class="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </label>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 3</a></li>
-                                <li><a>Item 3</a></li>
-                            </ul>
-                        </div>
-                        <a class="btn btn-ghost normal-case text-xl">
-                            <img class="w-[50px] h-[50px]" src="./images/logo.png" alt="">
-                            <span>Fruit Burst</span>
-                        </a>
-                    </div>
-
-                    <div class="navbar-end hidden lg:flex">
-                        <input type="text" name="search" id="" placeholder="Search Here">
-                    </div>
-                </div>
+            <!-- Mobile menu (hidden by default) -->
+            <div class="md:hidden hidden">
+                <ul class="mt-3 space-y-2">
+                    <li><a href="#" class="text-white text-xl block">Home</a></li>
+                    <li><a href="#" class="text-white text-xl block">About Us</a></li>
+                    <li><a href="#" class="text-white text-xl block">Shop</a></li>
+                    <li><a href="#" class="text-white text-xl block">All Fruits</a></li>
+                </ul>
             </div>
         </nav>
         <!-- banner -->
         <!-- carousel -->
-        <div class="container mx-auto relative mb-20">
+        <div class="container mx-auto relative mb-10 lg:mb-20">
 
             <div class=" carousel w-full min-h-screen lg:min-h-[calc(100vh-150px)]">
                 <div id="slide1" class="carousel-item relative w-full">
@@ -276,7 +221,7 @@
     </header>
     <main>
         <!-- deal of the day -->
-        <section class="container mx-auto mb-10 mt-10 lg:mt-32 w-11/12 md:w-full">
+        <section class="container mx-auto mb-10 mt-0 lg:mt-32 w-11/12 md:w-full">
             <div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
                 <div class="text-black-bg text-center lg:text-left space-y-5 leading-4">
                     <h2 class="text-4xl font-extrabold">Deal of the day</h2>
