@@ -26,9 +26,11 @@
                         clifford: '#da373d',
                         'nav-primary': '#F85559',
                         'black-bg': '#121212',
+                        'gray-bg': '#1212121A',
+
                     },
                     backgroundImage: {
-                        // 'banner-bg': "url('./images/banner.png')",
+                        'hero-bg': "url('./images/team.png')",
                     }
                 }
             }
@@ -152,8 +154,194 @@
         </div>
     </header>
     <main>
+<!-- deal of the day -->
+<section class="container mx-auto my-10 w-11/12 md:w-full">
+  <div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
+    <div class="text-black-bg text-center lg:text-left space-y-5 leading-4">
+        <h2 class="text-4xl font-extrabold">Why Choose Us</h2>
+        <p class="text-lg font-medium ">Contrary to popular belief, is not simply random text. It has roots in a
+            piece of classical <br> Latin
+            literature from 45 BC, making it over 2000 years old.</p>
+    </div>
+<!-- countdown -->
+    <div class="mx-auto lg:mx-0">
+        <div class="grid grid-flow-col gap-2 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:29;"></span>
+              </span>
+              Days
+            </div> 
+            <div class="pt-3">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              Hours
+            </div> 
+            <div class="pt-3">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:25;"></span>
+              </span>
+              Min
+            </div> 
+            <div class="pt-3">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:08;"></span>
+              </span>
+              Sec
+            </div>
+          </div>
+    </div>
+  </div>
+<!-- card portion -->
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-10 mt-10">
+    <!-- card-1 -->
+    <div class="card bg-base-100 border-gray-100 border border-gray-bg rounded-lg">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title font-bold text-xl">12.90$ - 18.85$</h2>
+          <div class="h-[1px] w-[200px] bg-gray-bg">
 
-        <section class="container mx-auto my-10">
+          </div>
+          <p>Apples</p>
+         <p class="text-nav-primary font-medium text-lg">Details</p>
+        </div>
+      </div>
+      <!-- card-2 -->
+      <div class="card bg-base-100 border-gray-100 border-2 rounded-lg text-[#12121299]">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          <div class="h-[1px] w-[150px] bg-[#1212121A]">
+
+          </div>
+          <p>Apples</p>
+          <span>
+            <i class="fa-solid fa-star" style="color: #f85559;"></i>
+            <i class="fa-solid fa-star-half-stroke" style="color: #f85559;"></i>
+            <i class="fa-solid fa-star" style="color: #fbc0ab;"></i>
+            <i class="fa-solid fa-star" style="color: #fbc0ab;"></i>
+            <i class="fa-solid fa-star" style="color: #fbc0ab;"></i>
+          </span>
+         <p class="text-nav-primary">Details</p>
+        </div>
+      </div>
+      <!-- card-3 -->
+      <div class="card bg-base-100 border-gray-100 border-2 rounded-lg">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          <div class="h-[1px] w-[150px] bg-[#1212121A]">
+
+          </div>
+          <p>Apples</p>
+         <p class="text-nav-primary">Details</p>
+        </div>
+      </div>
+      <!-- card-4 -->
+      <div class="card bg-base-100 border-gray-100 border-2 rounded-lg">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          <div class="h-[1px] w-[150px] bg-[#1212121A]">
+
+          </div>
+          <p>Apples</p>
+         <p class="text-nav-primary">Details</p>
+        </div>
+      </div>
+</div>
+</section>
+        <!-- meet the team -->
+        <section class="container mx-auto my-10 w-11/12 md:w-full">
+            <div class="hero min-h-screen bg-hero-bg">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content max-2xl:">
+                    <div class="max-w-md text-white">
+                        <h1 class="mb-5 text-4xl font-bold">Meet the team section</h1>
+                        <p class="mb-10 text-lg">Contrary to popular belief, is not simply random text. It has roots in a
+                            piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+
+
+                        <div class="flex flex-col md:flex-row gap-10">
+                            <div>
+                                <div class="flex justify-center mb-4">
+                                    <img src="./images/member1.png" alt="">
+                                </div>
+                                <h3 class="text-xl font-bold">Awlad Hossain</h3>
+                                <p class="text-base">Fruits Experts</p>
+                                <span class="flex justify-center gap-2">
+                                    <a class="link link-hover"><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a>
+                                    <a class="link link-hover"><i class="fa-brands fa-square-instagram" style="color: #F85559;"></i></i></a>
+                                    <a class="link link-hover"><i class="fa-brands fa-youtube" style="color: #F85559;"></i></i></a>
+                                </span>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-center mb-4">
+                                    <img src="./images/member1.png" alt="">
+                                </div>
+                                <h3 class="text-xl font-bold">Awlad Hossain</h3>
+                                <p class="text-base">Fruits Experts</p>
+                                <span class="flex justify-center gap-2">
+                                    <a class="link link-hover"><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a>
+                                    <a class="link link-hover"><i class="fa-brands fa-square-instagram" style="color: #F85559;"></i></i></a>
+                                    <a class="link link-hover"><i class="fa-brands fa-youtube" style="color: #F85559;"></i></i></a>
+                                </span>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-center mb-4">
+                                    <img src="./images/member1.png" alt="">
+                                </div>
+                                <h3 class="text-xl font-bold">Awlad Hossain</h3>
+                                <p class="text-base">Fruits Experts</p>
+                                <span class="flex justify-center gap-2">
+                                    <a class="link link-hover"><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a>
+                                    <a class="link link-hover"><i class="fa-brands fa-square-instagram" style="color: #F85559;"></i></i></a>
+                                    <a class="link link-hover"><i class="fa-brands fa-youtube" style="color: #F85559;"></i></i></a>
+                                </span>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-center mb-4">
+                                    <img src="./images/member1.png" alt="">
+                                </div>
+                                <h3 class="text-xl font-bold">Awlad Hossain</h3>
+                                <p class="text-base">Fruits Experts</p>
+                                <span class="flex justify-center gap-2">
+                                    <a class="link link-hover"><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a>
+                                    <a class="link link-hover"><i class="fa-brands fa-square-instagram" style="color: #F85559;"></i></i></a>
+                                    <a class="link link-hover"><i class="fa-brands fa-youtube" style="color: #F85559;"></i></i></a>
+                                </span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- why Choose us -->
+        <section class="container mx-auto my-10 w-11/12 md:w-full">
             <div class="text-black-bg text-center space-y-5 leading-4">
                 <h2 class="text-4xl font-extrabold">Why Choose Us</h2>
                 <p class="text-lg font-medium ">Contrary to popular belief, is not simply random text. It has roots in a
@@ -294,8 +482,8 @@
             <div class="grid grid-flow-col gap-4">
                 <a class="link link-hover"><i class="fa-brands fa-twitter fa-2xl"></i></i></a>
                 <a class="link link-hover"><i class="fa-brands fa-facebook fa-2xl"></i></i></a>
-                <a class="link link-hover"><i class="fa-brands fa-youtube fa-2xl"></i></a>
                 <a class="link link-hover"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+                <a class="link link-hover"><i class="fa-brands fa-youtube fa-2xl"></i></a>
                 <a class="link link-hover"><i class="fa-brands fa-instagram fa-2xl"></i></a>
                 <a class="link link-hover"><i class="fa-brands fa-apple fa-2xl"></i></a>
             </div>
